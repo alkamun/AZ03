@@ -53,6 +53,9 @@ driver.quit()
 
 data = pd.read_csv(file_path)
 prices = data['Price']
+
+print(f"Средняя цена: {prices.mean()}")
+
 plt.hist(prices, bins=10, edgecolor='black')
 
 plt.title('Гистограмма цен на диваны')
